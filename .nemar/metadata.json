@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "MetaRDK",
+  "description": "MetaRDK is a stereo-electroencephalography (sEEG) dataset from pharmacologically intractable epilepsy patients performing a perceptual decision-making task with metacognitive confidence judgments. Participants discriminated the direction of random dot motion while providing confidence ratings, with neural recordings capturing high-gamma activity (70-150 Hz) throughout task performance. This dataset enables investigation of neural mechanisms underlying evidence accumulation, decision confidence, and changes of mind in human intracranial recordings.",
+  "methods_description": "High-gamma activity (average power modulation in five non-overlapping frequency bands between 70-150 Hz) was recorded from implanted sEEG electrodes using a Micromed recording system at 512 Hz sampling rate. Data were segmented from trial onset (start button click) to trial offset (post-confidence response). Trials and channels with high epilepsy-related artifact were removed. Behavioral data including stimulus onset, response times, and confidence judgments were recorded for each trial.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,12 +26,36 @@
       "orcid": "0000-0001-6011-4921"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006253.v1.0.3",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "sEEG"
     },
+    {
+      "term": "Decision Making",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+    },
+    {
+      "term": "Metacognition",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000067489"
+    },
+    {
+      "term": "confidence judgment"
+    },
+    {
+      "term": "perceptual decision"
+    },
+    {
+      "term": "high-gamma oscillations"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1101/2024.03.23.586414",
       "identifier_type": "DOI",
@@ -49,78 +75,45 @@
       "identifier": "10.17605/OSF.IO/2KT97",
       "identifier_type": "DOI",
       "relation_type": "IsSupplementTo"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006253.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "European Research Council",
+      "funder_name": "ERC",
       "award_number": "803122",
       "award_title": "Metaction"
     },
     {
-      "funder_name": "European Research Council",
+      "funder_name": "ERC",
       "award_number": "101077874",
       "award_title": "LEAP"
     },
     {
-      "funder_name": "European Research Council",
+      "funder_name": "ERC",
       "award_number": "101125379",
       "award_title": "VOLTA"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "17.0 GB (89 files)"
   ],
   "formats": [
     ".csv",
     ".json",
     ".md",
     ".pickle",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "MetaRDK is a neuroimaging dataset containing intracranial EEG recordings from epileptic patients performing a perceptual decision-making task with confidence judgments. Patients discriminated the direction of random dot motion while their neural activity was recorded, with difficulty titrated to 70% accuracy. The dataset includes high-gamma band activity (70-150 Hz) and behavioral measures, enabling investigation of neural correlates of evidence accumulation, confidence, and changes of mind in decision-making processes.",
-  "methods_description": "Intracranial EEG recordings were obtained from pharmacologically intractable epilepsy patients using a Micromed recording system. Patients performed a perceptual decision task requiring discrimination of dot motion direction within 6 seconds, followed by confidence ratings on a 0-100 scale. High-gamma activity was extracted as average power modulation across five non-overlapping frequency bands between 70-150 Hz, sampled at 512 Hz. Data were segmented from trial onset to offset and screened to remove epilepsy-related artifacts.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "Decision Making",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
-    },
-    {
-      "term": "metacognition"
-    },
-    {
-      "term": "confidence judgment"
-    },
-    {
-      "term": "evidence accumulation"
-    },
-    {
-      "term": "high-gamma oscillations"
-    },
-    {
-      "term": "perceptual decision task"
-    },
-    {
-      "term": "changes of mind"
-    },
-    {
-      "term": "epilepsy"
-    },
-    {
-      "term": "pre-supplementary motor area"
-    },
-    {
-      "term": "insula"
-    }
-  ],
-  "source_hash": "ea79b32970c64d69eb77a5a3d2d04e16777b8bda2c34a9fb9c730f8c292938ac"
+  "source_hash": "c00fdd3b58849ac97102fe645f4bb5038ea495ecb4611aa3f81b43fbadad3bee"
 }
