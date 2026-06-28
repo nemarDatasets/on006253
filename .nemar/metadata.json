@@ -1,48 +1,126 @@
 {
   "version": "2.0",
-  "dataset_id": "on006253",
-  "source": "openneuro",
-  "source_id": "ds006253",
+  "pipeline_stage": "validated",
   "title": "MetaRDK",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Dorian Goueytes": {},
-    "Francois Stockart": {},
+    "Dorian Goueytes": {
+      "orcid": "0000-0002-0836-5333"
+    },
+    "Francois Stockart": {
+      "orcid": "0000-0002-6945-0638"
+    },
     "Alexis Robin": {},
     "Lucien Gyger": {},
     "Martin Rouy": {},
     "Dominique Hoffmann": {},
     "Lorella Minotti": {},
     "Philippe Kahane": {},
-    "Michael Pereira": {},
-    "Nathan Faivre": {}
+    "Michael Pereira": {
+      "orcid": "0000-0003-0778-674X"
+    },
+    "Nathan Faivre": {
+      "orcid": "0000-0001-6011-4921"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006253.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1101/2024.03.23.586414",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006253",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006253",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.17605/OSF.IO/2KT97",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementTo"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "ERC Metaction 803122"
+      "funder_name": "European Research Council",
+      "award_number": "803122",
+      "award_title": "Metaction"
     },
     {
-      "funder_name": "ERC LEAP 101077874"
+      "funder_name": "European Research Council",
+      "award_number": "101077874",
+      "award_title": "LEAP"
     },
     {
-      "funder_name": "ERC VOLTA 101125379"
+      "funder_name": "European Research Council",
+      "award_number": "101125379",
+      "award_title": "VOLTA"
     }
   ],
-  "acknowledgements": "NF, MP developed the study concept. NF implemented experiments. DG, FS, LG, MR, NF collected data. DG, LG, MP, NF analysed data. DH performed surgeries. LM, PK, AR provided clinical data. DG, NF, MP drafted the paper. All authors provided critical revisions and approved the final version of the paper for submission."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".json",
+    ".md",
+    ".pickle",
+    ".tsv"
+  ],
+  "description": "MetaRDK is a neuroimaging dataset containing intracranial EEG recordings from epileptic patients performing a perceptual decision-making task with confidence judgments. Patients discriminated the direction of random dot motion while their neural activity was recorded, with difficulty titrated to 70% accuracy. The dataset includes high-gamma band activity (70-150 Hz) and behavioral measures, enabling investigation of neural correlates of evidence accumulation, confidence, and changes of mind in decision-making processes.",
+  "methods_description": "Intracranial EEG recordings were obtained from pharmacologically intractable epilepsy patients using a Micromed recording system. Patients performed a perceptual decision task requiring discrimination of dot motion direction within 6 seconds, followed by confidence ratings on a 0-100 scale. High-gamma activity was extracted as average power modulation across five non-overlapping frequency bands between 70-150 Hz, sampled at 512 Hz. Data were segmented from trial onset to offset and screened to remove epilepsy-related artifacts.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "Decision Making",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+    },
+    {
+      "term": "metacognition"
+    },
+    {
+      "term": "confidence judgment"
+    },
+    {
+      "term": "evidence accumulation"
+    },
+    {
+      "term": "high-gamma oscillations"
+    },
+    {
+      "term": "perceptual decision task"
+    },
+    {
+      "term": "changes of mind"
+    },
+    {
+      "term": "epilepsy"
+    },
+    {
+      "term": "pre-supplementary motor area"
+    },
+    {
+      "term": "insula"
+    }
+  ],
+  "source_hash": "ea79b32970c64d69eb77a5a3d2d04e16777b8bda2c34a9fb9c730f8c292938ac"
 }
