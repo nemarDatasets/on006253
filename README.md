@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006253-blue)](https://doi.org/10.82901/nemar.on006253)
+
 ## Evidence accumulation in the pre-supplementary motor area and insula drives confidence and changes of mind
 
 Goueytes, D., Gigyer, L., Rouy, M., Hoffmann, D., Minotti, L., Kahane, P., Pereira, M., and Faivre, N. Evidence accumulation in the pre-supplementary motor area and insula drives confidence and changes of mind.
