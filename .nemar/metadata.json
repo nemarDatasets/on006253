@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "MetaRDK",
-  "description": "MetaRDK is a stereo-electroencephalography (sEEG) dataset from pharmacologically intractable epilepsy patients performing a perceptual decision-making task with metacognitive confidence judgments. Participants discriminated the direction of random dot motion while providing confidence ratings, with neural recordings capturing high-gamma activity (70-150 Hz) throughout task performance. This dataset enables investigation of neural mechanisms underlying evidence accumulation, decision confidence, and changes of mind in human intracranial recordings.",
-  "methods_description": "High-gamma activity (average power modulation in five non-overlapping frequency bands between 70-150 Hz) was recorded from implanted sEEG electrodes using a Micromed recording system at 512 Hz sampling rate. Data were segmented from trial onset (start button click) to trial offset (post-confidence response). Trials and channels with high epilepsy-related artifact were removed. Behavioral data including stimulus onset, response times, and confidence judgments were recorded for each trial.",
+  "description": "MetaRDK is an intracranial EEG (SEEG) dataset collected from patients with pharmacologically intractable epilepsy performing a perceptual decision-making task involving a random dot motion discrimination and subsequent confidence rating. The dataset provides high-gamma power (70-150Hz) activity segmented per trial, along with behavioral data such as response times, confidence judgments, and changes of mind, aimed at elucidating the neural correlates of decision-making and metacognition, particularly in the pre-supplementary motor area and insula.",
+  "methods_description": "Data were recorded intracranially at the bedside using a Micromed recording system, with electrode implantation determined by clinical need. Patients performed a random dot motion discrimination task with an adaptive staircase to titrate difficulty at 70% accuracy, followed by confidence ratings on a 0-100 scale. High-gamma activity (five non-overlapping bands between 70-150Hz) was extracted and segmented from trial onset to offset, sampled at 512Hz. Trials and channels with high epilepsy-related artifacts were excluded.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,7 +28,12 @@
   },
   "keywords": [
     {
-      "term": "sEEG"
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
       "term": "Decision Making",
@@ -36,30 +41,23 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
     },
     {
-      "term": "Metacognition",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000067489"
+      "term": "metacognition"
     },
     {
-      "term": "confidence judgment"
+      "term": "confidence"
     },
     {
-      "term": "perceptual decision"
+      "term": "high-gamma activity"
     },
     {
-      "term": "high-gamma oscillations"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "perceptual decision-making"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1101/2024.03.23.586414",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on006253",
