@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "MetaRDK",
-  "description": "MetaRDK is an intracranial EEG (SEEG) dataset collected from patients with pharmacologically intractable epilepsy performing a perceptual decision-making task involving a random dot motion discrimination and subsequent confidence rating. The dataset provides high-gamma power (70-150Hz) activity segmented per trial, along with behavioral data such as response times, confidence judgments, and changes of mind, aimed at elucidating the neural correlates of decision-making and metacognition, particularly in the pre-supplementary motor area and insula.",
-  "methods_description": "Data were recorded intracranially at the bedside using a Micromed recording system, with electrode implantation determined by clinical need. Patients performed a random dot motion discrimination task with an adaptive staircase to titrate difficulty at 70% accuracy, followed by confidence ratings on a 0-100 scale. High-gamma activity (five non-overlapping bands between 70-150Hz) was extracted and segmented from trial onset to offset, sampled at 512Hz. Trials and channels with high epilepsy-related artifacts were excluded.",
+  "description": "MetaRDK contains intracranial EEG (stereo-EEG) high-gamma activity from patients with pharmacologically intractable epilepsy performing a perceptual random-dot motion decision task followed by a confidence judgement. The data comprise average power modulation in five non-overlapping frequency bands between 70 and 150 Hz, segmented from trial onset to trial offset and sampled at 512 Hz. Behavioral tables (stimulus onset, response times, confidence, changes of mind) accompany the recordings to study the neural correlates of decision making and metacognition.",
+  "methods_description": "Patients with intractable epilepsy were recorded at the bedside with a Micromed system, with electrode implantation determined solely by clinical need. They performed a random-dot motion left/right discrimination task (6 s response window, difficulty titrated to 70% correct with an adaptive staircase), responding by mouse movement and click, then rated confidence on a 0-100 scale. Trials and channels with epilepsy-related artifacts were removed.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,12 +28,10 @@
   },
   "keywords": [
     {
-      "term": "intracranial EEG"
+      "term": "iEEG"
     },
     {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "stereo-EEG"
     },
     {
       "term": "Decision Making",
@@ -41,23 +39,25 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
     },
     {
-      "term": "metacognition"
+      "term": "confidence"
     },
     {
-      "term": "confidence"
+      "term": "metacognition"
     },
     {
       "term": "high-gamma activity"
     },
     {
-      "term": "perceptual decision-making"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1101/2024.03.23.586414",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on006253",
@@ -72,7 +72,7 @@
     {
       "identifier": "10.17605/OSF.IO/2KT97",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds006253.v1.0.3",
@@ -103,7 +103,7 @@
     "ieeg"
   ],
   "sizes": [
-    "17.0 GB (89 files)"
+    "15.80 GB (89 files)"
   ],
   "formats": [
     ".csv",
